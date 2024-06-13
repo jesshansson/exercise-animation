@@ -1,0 +1,26 @@
+*{
+  margin: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+a.btn  {
+  background-color: rgb(236, 162, 162);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a.btn:hover {
+  background-color: coral;
+  box-shadow: 10px 5px 5px rgb(58, 57, 57);
+  padding: 2rem 4rem;
+  font-size: 25px;
+  transition: 0.8s ease-in-out;
+}

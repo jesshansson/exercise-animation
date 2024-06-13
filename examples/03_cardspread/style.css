@@ -1,0 +1,96 @@
+:root {
+  --card-1-color: rgba(234,52,38,1);
+  --card-2-color: rgba(240,151,61,1); 
+  --card-3-color: rgba(250,248,94,1);
+  --card-4-color: rgba(137,249,97,1);
+  --card-5-color: rgba(105,203,142,1);
+  --card-6-color: rgba(133,232,250,1);
+  --card-7-color: rgba(107,119,244,1);
+  --card-8-color: rgba(188,126,238,1);
+  --card-9-color: rgba(233,182,209,1);
+}
+
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+.cards {
+  height: 100vh;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .card {
+    width: 10rem;
+    height: 15rem;  
+    position: absolute;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    transform-origin: center bottom;
+    box-shadow: 2px 1px 1px 0px rgba(0,0,0,0.1); 
+  }
+
+}
+
+.cards:hover {
+  
+  .card:nth-of-type(1) {
+  transform: translate(2rem) rotateZ(40deg);
+  }
+  .card:nth-of-type(2) {
+    transform: translate(1.5rem) rotateZ(30deg);
+  }
+  .card:nth-of-type(3) {
+    transform: translate(1rem) rotateZ(20deg);
+  }
+  .card:nth-of-type(4) {
+    transform: translate(.5rem) rotateZ(10deg);
+  }
+  .card:nth-of-type(6) {
+    transform: translate(-.5rem) rotateZ(-10deg);
+  }
+ .card:nth-of-type(7) {
+    transform: translate(-1rem) rotateZ(-20deg);
+  }
+  .card:nth-of-type(8) {
+    transform: translate(-1.5rem) rotateZ(-30deg);
+  }
+  .card:nth-of-type(9) {
+    transform: translate(-2rem) rotateZ(-40deg); 
+  }
+  
+}
+
+
+.card:nth-of-type(1) {
+  background-color: var(--card-1-color);
+}
+
+.card:nth-of-type(2) {
+  background-color: var(--card-2-color)
+}
+.card:nth-of-type(3) {
+  background-color: var(--card-3-color)
+}
+.card:nth-of-type(4) {
+  background-color: var(--card-4-color)
+}
+.card:nth-of-type(5) {
+  background-color: var(--card-5-color)
+}
+.card:nth-of-type(6) {
+  background-color: var(--card-6-color)
+}
+.card:nth-of-type(7) {
+  background-color: var(--card-7-color)
+}
+.card:nth-of-type(8) {
+  background-color: var(--card-8-color)
+}
+.card:nth-of-type(9) {
+  background-color: var(--card-9-color)
+}
+
