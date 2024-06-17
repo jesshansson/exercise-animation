@@ -1,0 +1,61 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+article {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d; /* Behåll 3D-transformationer för barn-element */
+  /* transform: perspective(1000px); */
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.front {
+  background-color: #ffcc00;
+}
+
+.back {
+  background-color: #ff8800;
+  transform: rotateY(180deg);
+}
+
+@keyframes flip {
+  0% {
+    transform: translateY(0) rotateY(0);
+  }
+  25% {
+    transform: translateY(-20px) rotateY(90deg);
+  }
+  50% {
+    transform: translateY(-20px) rotateY(180deg);
+  }
+  75% {
+    transform: translateY(-20px) rotateY(270deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg);
+  }
+}
+
+article:hover {
+  animation: flip 2s ease-in-out;
+}
